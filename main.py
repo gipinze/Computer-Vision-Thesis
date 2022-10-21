@@ -1,10 +1,3 @@
-"""
-Live prediction of emotion, age, and gender using pre-trained models. 
-Uses haar Cascades classifier to detect face..
-then, uses pre-trained models for emotion, gender, and age to predict them from 
-live video feed. 
-"""
-
 from keras.models import load_model
 from time import sleep
 from keras.utils.image_utils import img_to_array
@@ -12,7 +5,7 @@ from keras.preprocessing import image
 import cv2
 import numpy as np
 
-face_classifier=cv2.CascadeClassifier('haarcascades_models/haarcascade_frontalface_default.xml')
+face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 emotion_model = load_model('emotion_detection_model_100epochs.h5')
 
 class_labels=['Angry','Disgust', 'Fear', 'Happy','Neutral','Sad','Surprise']
