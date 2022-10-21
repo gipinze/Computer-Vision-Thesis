@@ -1,9 +1,3 @@
-# https://youtu.be/P4OevrwTq78
-"""
-Train a deep learning model on facial emotion detection
-Dataset from: https://www.kaggle.com/msambare/fer2013
-"""
-
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 from keras.layers import Dense,Dropout,Flatten
@@ -15,6 +9,8 @@ import numpy as np
 IMG_HEIGHT=48 
 IMG_WIDTH = 48
 batch_size=32
+
+#This is the Path to the dataset, FER2013 in this case
 
 train_data_dir='Dataset/train/'
 validation_data_dir='Dataset/test/'
