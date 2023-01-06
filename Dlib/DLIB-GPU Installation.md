@@ -33,7 +33,7 @@ $ git clone https://github.com/davisking/dlib.git
 $ cd dlib
 $ mkdir build
 $ cd build
-$ cmake -G "Visual Studio 15 2017" -DDLIB_USE_CUDA=1 -DUSE_AVX_INSTRUCTIONS=1 ..
+$ cmake -G "Visual Studio 15 2017 Win64" -T host=x64 -DDLIB_USE_CUDA=1 -DUSE_AVX_INSTRUCTIONS=1 ..
 $ cmake --build . --config Release
 $ cd ..
 
