@@ -37,7 +37,7 @@ def parse_xml(xml_file):
     }
 
 # convert the XML files to LabelMe JSON format
-xml_dir = "C:/Users/darks/Desktop/Emotion AI/Emotion Recognition/FER2013/Test_Face_Detector/Test_Face_Detector/workspace/images/test"
+xml_dir = "path/to/csv.file"
 for xml_file in os.listdir(xml_dir):
     if xml_file.endswith(".xml"):
         labelme_json = parse_xml(os.path.join(xml_dir, xml_file))
