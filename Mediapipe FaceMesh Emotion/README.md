@@ -1,3 +1,12 @@
+# This code do not belong to me, but I did some modifications in order to make it work with the latest Mediapipe and Tensorflow version
+
+The modification is in the Collect Images, this new code uses AffectNet dataset (8 classes/emotions) and is necessary to modify also the keypoints csv available with the classes
+
+Another modification is related to the Encode_label and logging_csv lines
+
+The code worked perfectly today: 08.03.2023
+
+
 # Reference from Kazuhito Takahashi(https://twitter.com/KzhtTkhs)
 - [MediaPipe](https://mediapipe.dev/)
 - [Kazuhito00/mediapipe-python-sample](https://github.com/Kazuhito00/mediapipe-python-sample)
